@@ -15,7 +15,7 @@ class  superSumTest(unittest.TestCase):
 
 	def test_four_numbers(self):
 		result = super_sum(10, 30, 50, 20)
-		self.assertEqual(result, 120)
+		self.assertEqual(result, 110)
 
 		#result = super_s
 
@@ -29,3 +29,4 @@ class  superSumTest(unittest.TestCase):
 		a,b,c,d = [1,2], [2,3], [3], [4,10]
 		result = super_sum(a, b,c, d)
 		self.assertEqual(result, 25)
+

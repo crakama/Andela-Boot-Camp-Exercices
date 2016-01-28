@@ -26,3 +26,6 @@ print my_car.max_speed
 print my_car.color
 print my_car.engine_cc
 
+class Car1(object):
+	def __init__(self, car_model, )
+
