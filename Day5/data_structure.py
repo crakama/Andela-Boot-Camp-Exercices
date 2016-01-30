@@ -53,16 +53,17 @@ class PhoneBookDict(object):
 	 	self.book = {}
 	def add_contact(self, username, phone_number):
 	 	
-	 pass
+	 self.book[username] = phone_number
 	def search(self, username):
+		#if username in self.book: / self.book.has_key(username)
+		#	return
+		#else: return
 
 	 ''' returns a `dict` with phone_number and number of loop count e.g {'count': 'austin', 'phone_number'}'''
-	 
-#if record not found
-	   	    	return result
-	 result = {
-	   	    	       'count': count,
-	   	    	       'phone_number': None
+	     return result
+	     result = {
+	   	    	       'count': 1,
+	   	    	       'phone_number': self.book.get(username, None) 
 	   	    	}
 	 return result
 	   	    	# a dictionary that has key (6) and value(9)
